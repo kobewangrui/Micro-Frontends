@@ -2,12 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from "./router"
 import { registerMicroApps, start } from 'qiankun';
-import HelloWorld from "./components/HelloWorld";
+import PublicFooter from "./components/PublicFooter";
 import _ from 'lodash'
 
 
 // 全局组件注册
-window.commonComponents= { HelloWorld }
+window.commonComponents= { PublicFooter }
 
 
 // cloneDeep 深拷贝

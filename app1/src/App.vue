@@ -10,7 +10,7 @@
       <router-link to="/helloword">应用二页面3</router-link>
     </p>
     <p>
-      应用一调用父组件：<HelloWorld/>
+      应用一调用父组件：<PublicFooter/>
     </p>
     <router-view></router-view>
   </div>
