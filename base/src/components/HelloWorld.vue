@@ -1,6 +1,6 @@
 <template>
   <div>
-      <span class="hello">基座内容、子应用公用组件</span>
+      <span class="hello">基座组件、子应用公用组件</span>
   </div>
 </template>
 

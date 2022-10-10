@@ -3,6 +3,10 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from './App.vue';
 import routes from './router';
+import _ from 'lodash'
+for (const componentsName in window.commonComponents) {
+  Vue.component(componentsName, _.cloneDeep(window.commonComponents[componentsName]))
+}
 
 Vue.config.productionTip = false;
 

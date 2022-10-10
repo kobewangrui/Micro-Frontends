@@ -2,7 +2,18 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from "./router"
 import { registerMicroApps, start } from 'qiankun';
+import HelloWorld from "./components/HelloWorld";
+import _ from 'lodash'
 
+
+// 全局组件注册
+window.commonComponents= { HelloWorld }
+
+
+// cloneDeep 深拷贝
+for (const componentsName in window.commonComponents) {
+  Vue.component(componentsName, _.cloneDeep(window.commonComponents[componentsName]))
+}
 
 Vue.config.productionTip = false
 
